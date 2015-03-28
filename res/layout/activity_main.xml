@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ysnows="http://schemas.android.com/apk/res/com.example.ysnowsmenu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <ListView
+        android:id="@+id/id_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+    </ListView>
+    
+  <com.example.ysnowsmenu.StarMenu 
+     android:id="@+id/id_menu"
+   	 android:layout_width="match_parent"
+   	 android:layout_height="match_parent"
+   	 ysnows:position="right_bottom"
+   	 ysnows:radius="100dp"
+    >
+      <RelativeLayout 
+        android:layout_width="wrap_content"
+   	 	android:layout_height="wrap_content"
+   	 	android:background="@drawable/composer_button"
+          >
+         <ImageView 
+             android:id="@+id/button"
+             android:layout_width="wrap_content"
+   	 		 android:layout_height="wrap_content"
+   	 		 android:layout_centerInParent="true"
+   	 		 android:src="@drawable/composer_icn_plus"
+             /> 
+      </RelativeLayout>
+      
+      <ImageView 
+          android:layout_width="wrap_content"
+   	 	  android:layout_height="wrap_content"
+   	 	  android:src="@drawable/composer_music"
+   	 	  android:tag="MUSIC"
+          />
+      <ImageView 
+          android:layout_width="wrap_content"
+   	 	  android:layout_height="wrap_content"
+   	 	  android:src="@drawable/composer_camera"
+   	 	  android:tag="CAMERA"
+          />
+      <ImageView 
+          android:layout_width="wrap_content"
+   	 	  android:layout_height="wrap_content"
+   	 	  android:src="@drawable/composer_place"
+   	 	  android:tag="PLACE"
+          />
+      <ImageView 
+          android:layout_width="wrap_content"
+   	 	  android:layout_height="wrap_content"
+   	 	  android:src="@drawable/composer_sleep"
+   	 	  android:tag="SLEEP"
+          />
+      
+      
+  </com.example.ysnowsmenu.StarMenu>
+    
+</RelativeLayout>
